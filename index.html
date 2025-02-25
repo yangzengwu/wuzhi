@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-mode">
+            <button id="pvp" class="mode-btn active">双人对战</button>
+            <button id="pve" class="mode-btn">人机对战</button>
+            <div id="ai-settings" class="ai-settings" style="display: none;">
+                <div class="difficulty">
+                    <button id="easy" class="diff-btn active">简单</button>
+                    <button id="medium" class="diff-btn">中等</button>
+                    <button id="hard" class="diff-btn">困难</button>
+                </div>
+            </div>
+        </div>
+        <div class="game-info">
+            <div id="status" class="status">当前回合：黑子</div>
+            <div id="timer" class="timer">00:00</div>
+        </div>
+        <canvas id="board" width="600" height="600"></canvas>
+        <div class="controls">
+            <button id="undo">悔棋</button>
+            <button id="restart">重新开始</button>
+        </div>
+    </div>
+    <script src="js/board.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
