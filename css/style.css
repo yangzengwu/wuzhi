@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-mode {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.mode-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.mode-btn:hover {
+    background-color: #5a6268;
+}
+
+.mode-btn.active {
+    background-color: #28a745;
+}
+
+.mode-btn.active:hover {
+    background-color: #218838;
+}
+
+.ai-settings {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.difficulty {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.diff-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.diff-btn:hover {
+    background-color: #5a6268;
+}
+
+.diff-btn.active {
+    background-color: #007bff;
+}
+
+.diff-btn.active:hover {
+    background-color: #0056b3;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.status, .timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#board {
+    border: 2px solid #333;
+    background-color: #DEB887;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3d8b40;
+}
+
+#undo {
+    background-color: #f44336;
+}
+
+#undo:hover {
+    background-color: #da190b;
+}
+
+@media (max-width: 650px) {
+    #board {
+        width: 90vw;
+        height: 90vw;
+    }
+}
